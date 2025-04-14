@@ -15,15 +15,8 @@ const options = {
 function fetchData(){
 
   fetch(url, options)
-  .then(response => {
-
-    console.log(response);
-    return response.json()
-  
-  })
-  .then(data => {
-    display(data.data);
-  })
+  .then(response => response.json())
+  .then(data => display(data.data))
   .catch(error => console.error(error))
 
 }
