@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------ C U S T O M - C L A S S E S ----------- */
+
+.green-color{
+    color: #00ff99;
+}
+
+.banner-img-section img{
+    animation: circular-motion 20s linear infinite;
+
+}
+
+.blue-bg{
+    background-color: #06264d !important;
+}
+
+/* -------- B A C K G R O U N D - I M A G E S ---------- */
+
+.Symptoms, .comparison, .footer{
+    background-image: url("../images/service-bg.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+/* ---------- H O V E R - A N D - A N I M A T I O N ------------ */
+
+.symptoms-item:hover, .comparison-item:hover{
+    background-color: #fff !important;
+    color: black !important;
+    transform: translateY(-10px);
+    transition: 0.3s ease-in-out;
+}
+
+@keyframes circular-motion {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

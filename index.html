@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>covid 19</title>
+  </head>
+  <body>
+    
+    <!------------- N A V I G A T I O N ------------->
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top blue-bg shadow">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo-img.png" alt="logo-img" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto gap-3 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Symptoms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Prevention</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Faq</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contact</a>
+              </li>
+              <button class="btn btn-outline-light rounded-pill">ARE YOU SICK</button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!------------- N A V I G A T I O N ------------->
+
+    <main>
+      <!------------- B A N N E R - S E C T I O N ------------->
+      <section>
+        <div class="card border-0 overflow-hidden rounded-0">
+          <img src="./images/banner-section.jpg" class="w-100 vh-100 img-fluid" alt="banner-img" />
+          <div class="card-img-overlay p-0">
+            <div class="container">
+              <div class="row vh-100 align-items-center">
+                <div class="col-lg-6">
+                  <div class="banner-content">
+                    <h1 class="fw-bold display-4 text-white">COVID - 19 Tracker</h1>
+                    <p class="fw-bold fs-4 text-white">Total Confirmed Corona Cases</p>
+                    <h2 class="fw-bold display-1 green-color" id="totalConfirmed"></h2>
+                    <ul class="list-unstyled text-white w-50">
+                      <li class="d-flex justify-content-between fw-semibold">
+                        <p class="fs-5">Active Cases</p>
+                        <p class="fs-5" id="totalActive"></p>
+                      </li>
+                      <li class="d-flex justify-content-between fw-semibold">
+                        <p class="fs-5">Deaths Cases</p>
+                        <p class="fs-5" id="totalDeaths"></p>
+                      </li>
+                    </ul>
+                    <button class="btn btn-outline-light rounded-pill py-3 px-4">Meet the Doctor</button>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="banner-img-section">
+                    <img src="./images/banner-main-img.png" class="img-fluid" alt="img-banner-section" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!------------- A B O U T - U S ------------->
+
+      <section class="About-us blue-bg h-75 w-100 py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="about-us-img">
+                <img src="./images/about-section.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="about-us-content">
+                <p class="green-color fs-5">How Virus Spread</p>
+                <h2 class="fw-semibold text-white">How Contagion Coronavirus</h2>
+                <p class="text-white">
+                  The coronavirus primarily spreads through respiratory droplets released when an infected person coughs, sneezes, talks, or breathes.
+                  It can also spread via contact with contaminated surfaces, making close contact with infected individuals a significant risk factor.
+                </p>
+                <ul class="list-unstyled mt-5">
+                  <li class="d-flex text-white align-items-center gap-3">
+                    <img src="./images/human-contact.jpg" class="rounded-circle h-75" alt="human-contact-img" />
+                    <div>
+                      <h4>Human Contact</h4>
+                      <p>COVID-19 spreads primarily through close human contact via respiratory droplets and surfaces.</p>
+                    </div>
+                  </li>
+                  <li class="d-flex text-white align-items-center gap-3 my-3">
+                    <img src="./images/air-tramission.jpg" class="rounded-circle h-75" alt="air-tramission-img" />
+                    <div>
+                      <h4>Air Transmission</h4>
+                      <p>COVID-19 spreads through inhaling airborne droplets and aerosols released by infected individuals nearby.</p>
+                    </div>
+                  </li>
+                  <li class="d-flex text-white align-items-center gap-3">
+                    <img src="./images/contaminated-objects.jpg" class="rounded-circle h-75" alt="contanunated-objects" />
+                    <div>
+                      <h4>Contaminated Objects</h4>
+                      <p>COVID-19 can be transmitted through contact with contaminated objects, leading to potential infection risks.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------- S Y M P T O M S ------------->
+
+      <section class="Symptoms">
+        <div class="container py-5 px-5">
+          <div class="Symptoms-title text-center mb-5">
+            <h2 class="text-white fs-1">Corona Virus Symptoms</h2>
+            <p class="w-50 mx-auto text-white">
+              Common COVID-19 symptoms include fever, cough, shortness of breath, fatigue, and loss of taste. These symptoms can vary in severity and
+              may appear 2-14 days after exposure to the virus
+            </p>
+          </div>
+          <div class="row g-3 text-white">
+            <div class="col-lg-6">
+              <div class="symptoms-item d-flex align-items-center gap-5 blue-bg p-3 rounded-4">
+                <img src="./images/symtomps-1.jpg" class="rounded-circle" alt="" />
+                <p class="fs-3 fw-semibold mb-0">Coughing And Sneezing</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="symptoms-item d-flex align-items-center gap-5 blue-bg p-3 rounded-4">
+                <img src="./images/symtomps-2.jpg" class="rounded-circle" alt="" />
+                <p class="fs-3 fw-semibold mb-0">Hot Fever</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="symptoms-item d-flex align-items-center gap-5 blue-bg p-3 rounded-4">
+                <img src="./images/symtomps-3.jpg" class="rounded-circle" alt="" />
+                <p class="fs-3 fw-semibold mb-0">Strong Headache</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="symptoms-item d-flex align-items-center gap-5 blue-bg p-3 rounded-4">
+                <img src="./images/symtomps-4.jpg" class="rounded-circle" alt="" />
+                <p class="fs-3 fw-semibold mb-0">Shortness Of Breath</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="symptoms-item d-flex align-items-center gap-5 blue-bg p-3 rounded-4">
+                <img src="./images/symtomps-5.jpg" class="rounded-circle" alt="" />
+                <p class="fs-3 fw-semibold mb-0">Confusion</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="symptoms-item d-flex align-items-center gap-5 blue-bg p-3 rounded-4">
+                <img src="./images/symtomps-6.jpg" class="rounded-circle" alt="" />
+                <p class="fs-3 fw-semibold mb-0">Sore Throat</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------- S Y M T O M P S - P R E V E N T I O N ------------->
+
+      <section class="prevention blue-bg py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="about-us-content">
+                <p class="green-color fs-5">About (2020-nCoV)</p>
+                <h2 class="fw-semibold text-white">Prevention Coronavirus</h2>
+                <p class="text-white">
+                  Preventing coronavirus involves vaccination, wearing masks, practicing hand hygiene, maintaining physical distance, and improving
+                  indoor ventilation.
+                </p>
+                <ul class="list-unstyled mt-5">
+                  <li class="d-flex text-white align-items-center gap-3">
+                    <img src="./images/preventionn-1.jpg" class="rounded-circle h-75" alt="human-contact-img" />
+                    <div>
+                      <h4>Wash Your Hands For 20sec</h4>
+                      <p>Practice regular hand hygiene by washing hands frequently with soap and water or using hand sanitizer.</p>
+                    </div>
+                  </li>
+                  <li class="d-flex text-white align-items-center gap-3 my-3">
+                    <img src="./images/prevention-2.jpg" class="rounded-circle h-75" alt="air-tramission-img" />
+                    <div>
+                      <h4>Cover Nose and Mouth When Sneezing</h4>
+                      <p>Maintain physical distancing of at least six feet from others to minimize exposure.</p>
+                    </div>
+                  </li>
+                  <li class="d-flex text-white align-items-center gap-3">
+                    <img src="./images/prevention-3.jpg" class="rounded-circle h-75" alt="contanunated-objects" />
+                    <div>
+                      <h4>Wear A Mask If Available</h4>
+                      <p>Wear masks in crowded or enclosed spaces to reduce transmission risk.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="about-us-img">
+                <img src="./images/prevention-4.png" class="img-fluid ms-5 my-3" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------- D O - A N D - A V O I D ------------->
+
+      <section class="comparison">
+        <div class="container py-5">
+          <div class="Symptoms-title text-center mb-5">
+            <h2 class="text-white fs-1">Corona Virus Symptoms</h2>
+            <p class="w-50 mx-auto text-white">
+              COVID-19 shares symptoms with other respiratory illnesses like the flu and common cold, including cough, fever, and fatigue. However,
+              unique symptoms such as loss of taste or smell can help distinguish it from these other conditions
+            </p>
+          </div>
+          <div class="row gx-3">
+            <div class="col-lg-6">
+              <div class="comparison-title py-5">
+                <h2 class="text-center text-white">What you should do</h2>
+              </div>
+              <div class="row gy-3 text-white">
+                <div class="col-lg-12">
+                  <div class="comparison-item d-flex align-items-center gap-5 bg-success p-3 rounded-4">
+                    <img src="./images/do-activity-1.jpg" class="rounded-circle" alt="" />
+                    <p class="fs-4 fw-semibold mb-0">Wash your hands sanitizer</p>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="comparison-item d-flex align-items-center gap-5 bg-success p-3 rounded-4">
+                    <img src="./images/do-activity-2.jpg" class="rounded-circle" alt="" />
+                    <p class="fs-4 fw-semibold mb-0">Ware a face mask outside</p>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="comparison-item d-flex align-items-center gap-5 bg-success p-3 rounded-4">
+                    <img src="./images/do-activity-3.jpg" class="rounded-circle" alt="" />
+                    <p class="fs-4 fw-semibold mb-0">Cover your cough tissue paper</p>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="comparison-item d-flex align-items-center gap-5 bg-success p-3 rounded-4">
+                    <img src="./images/do-activity-4.jpg" class="rounded-circle" alt="" />
+                    <p class="fs-4 fw-semibold mb-0">Check your body regulerly</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="comparison-title py-5">
+                <h2 class="text-center text-white">What you should avoid</h2>
+              </div>
+              <div class="row gy-3 text-white">
+                <div class="col-lg-12">
+                  <div class="comparison-item d-flex align-items-center gap-5 bg-danger p-3 rounded-4">
+                    <img src="./images/avoid-activity-1.jpg" class="rounded-circle" alt="" />
+                    <p class="fs-4 fw-semibold mb-0">Avoid contact with sick people</p>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="comparison-item d-flex align-items-center gap-5 bg-danger p-3 rounded-4">
+                    <img src="./images/avoid-activity-2.jpg" class="rounded-circle" alt="" />
+                    <p class="fs-4 fw-semibold mb-0">Avoid contact animals</p>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="comparison-item d-flex align-items-center gap-5 bg-danger p-3 rounded-4">
+                    <img src="./images/avoid-activity-3.jpg" class="rounded-circle" alt="" />
+                    <p class="fs-4 fw-semibold mb-0">Avoid crowded places</p>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="comparison-item d-flex align-items-center gap-5 bg-danger p-3 rounded-4">
+                    <img src="./images/avoid-activity-4.jpg" class="rounded-circle" alt="" />
+                    <p class="fs-4 fw-semibold mb-0">Contaminated objects</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------- C O N T A C T - U S ------------->
+
+      <section class="contact-us blue-bg py-5">
+        <div class="container">
+          <form class="row g-3 w-75 mx-auto text-white p-4 rounded-4">
+            <div class="col-md-12">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" />
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" />
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity" />
+            </div>
+            <div class="col-md-6">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>Gujarat</option>
+                <option>Delhi</option>
+                <option>Mumbai</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck" />
+                <label class="form-check-label" for="gridCheck"> Check me out </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-success">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!------------- F O O T E R - S E C T I O N ------------->
+
+    <footer class="footer text-white text-center text-lg-start bg-dark">
+      <div class="container p-4">
+        <div class="row mt-4">
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">
+              <img src="./images/logo-img.png" alt="" />
+            </h5>
+
+            <p>Several companies have been actively involved in COVID-19 research and vaccine development.</p>
+
+            <p>
+              Other notable contributors include Gilead Sciences and various biotech firms supported by organizations like CEPI, which collaborates
+              with multiple research institutes and pharmaceutical companies.
+            </p>
+
+            <div class="mt-4">
+              <a type="button" class="btn blue-bg text-white"><i class="bi bi-facebook"></i></a>
+              <a type="button" class="btn blue-bg text-white"><i class="bi bi-twitter"></i></a>
+              <a type="button" class="btn blue-bg text-white"><i class="bi bi-google"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="mb-4 pb-1 ms-5">ADDRESS / CONTACT</h5>
+
+            <ul class="list-unstyled ms-5">
+              <li class="mb-3">
+                <span class="fa-li"><i class="bi bi-house-door-fill"></i></span><span class="ms-2">Warsaw, 00-967, Poland</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="bi bi-envelope-fill"></i></span><span class="ms-2">contact@example.com</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="bi bi-telephone-fill"></i></span><span class="ms-2">+ 48 234 567 88</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <h5 class="mb-4">OPENING HOURS</h5>
+
+            <ul class="list-unstyled w-50">
+              <li class="d-flex justify-content-between">
+                <p>Mon - Thu:</p>
+                <p>8am - 9pm</p>
+              </li>
+              <li class="d-flex justify-content-between">
+                <p>Fri - Sat:</p>
+                <p>8am - 1am</p>
+              </li>
+              <li class="d-flex justify-content-between">
+                <p>Sunday:</p>
+                <p>9am - 10pm</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2025 All Rights Reserved. Designed by
+        <a class="text-white" href="https://mdbootstrap.com/">Rushabh Gadhiya</a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
